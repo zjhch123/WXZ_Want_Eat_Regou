@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+<head>
+  <title>我想吃热狗</title>
+  <meta charset="utf-8">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="yes" name="apple-touch-fullscreen">
+  <meta content="telephone=no,email=no" name="format-detection">
+  <meta name="screen-orientation" content="portrait">
+  <meta name="x5-orientation" content="portrait">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover">
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?98900d1844a825fce0e234022229ee57";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <script>
+    !function () {
+      function a() {
+        /* iframe 中不处理最大宽度 */
+        if (parseInt(document.documentElement.clientWidth) > 768 && top.window == window) {
+          document.documentElement.style.fontSize = 768 / 750 * 10 / 16 * 1000 + "%";
+        } else {
+          document.documentElement.style.fontSize = document.documentElement.clientWidth / 750 * 10 / 16 * 1000 + "%";
+        }
+      }
+      var b = null;
+      window.addEventListener("resize", function () {
+        clearTimeout(b);
+        b = setTimeout(a, 300);
+      }, !1);
+      a();
+    }()
+  </script>
+</head>
+<body>
+  <img src="./assets/images/icon.jpg" class="u-img">
+  <div class="J_unit" style="width: 1rem;height: 1px;opacity: 0;position: absolute;"></div>
+  <div class="u-load">
+    <p class="tlt">操纵校长吃热狗</p>
+    <p class="sub">注意不能让校长饿着，也不能让校长吃撑</p>
+    <a href="javascript:;" class="u-start J_start">开始</a>
+  </div>
+  <div class="u-game">
+    <div class="u-time"><span class="text">得分</span><span class="J_time">0</span></div>
+    <div class="u-canvas J_canvas"></div>
+    <div class="u-control">
+      <a href="javascript:;" class="left J_left">左</a>
+      <a href="javascript:;" class="right J_right">右</a>
+    </div>
+  </div>
+  <div class="u-gameover1">
+    <p class="tlt">吃撑了!</p>
+    <p class="sub">您的得分: <span class="J_time">0</span></p>
+    <a href="javascript:;" class="restart J_restart">再来一局</a>
+  </div>
+  <div class="u-gameover2">
+    <p class="tlt">饿晕了!</p>
+    <p class="sub">您的得分: <span class="J_time">0</span></p>
+    <a href="javascript:;" class="restart J_restart">再来一局</a>
+  </div>
+</body>
+</html>
